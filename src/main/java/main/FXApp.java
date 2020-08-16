@@ -8,6 +8,8 @@ import javafx.stage.Stage;
 
 public class FXApp extends Application{
 
+	public static int counter = 1;
+	
 	public static void main(String[] args) {
 		launch();
 
@@ -16,7 +18,7 @@ public class FXApp extends Application{
 	@Override
 	public void start(Stage primaryStage) throws Exception {
 		
-		VBox box = FXMLLoader.load(getClass().getResource("/template.fxml"));
+		VBox box = FXMLLoader.load(getClass().getResource("/like-template.fxml"));
 	
 		Scene scene = new Scene(box);
 		
@@ -25,5 +27,6 @@ public class FXApp extends Application{
 		
 		
 	}
+	
 
 }
